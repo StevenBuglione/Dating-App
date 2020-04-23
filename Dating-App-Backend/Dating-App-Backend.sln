@@ -1,0 +1,17 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dating-App-Backend", "Dating-App-Backend\Dating-App-Backend.csproj", "{926C81FC-DD00-4816-B35B-D9D1DB614351}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{926C81FC-DD00-4816-B35B-D9D1DB614351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926C81FC-DD00-4816-B35B-D9D1DB614351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926C81FC-DD00-4816-B35B-D9D1DB614351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926C81FC-DD00-4816-B35B-D9D1DB614351}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
