@@ -6,10 +6,17 @@
   </PropertyGroup>
 
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Dating-App-Backend' ">
+    <StartAction>Project</StartAction>
+    <ExternalConsole>true</ExternalConsole>
+    <LaunchUrl>weatherforecast</LaunchUrl>
+    <ApplicationURL>http://localhost:5000</ApplicationURL>
+  </PropertyGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="Data\" />
     <Folder Include="Dtos\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
@@ -27,5 +34,8 @@
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.5.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.3" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
 </Project>
