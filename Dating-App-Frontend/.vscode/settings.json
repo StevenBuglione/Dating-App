@@ -1,7 +1,4 @@
 {
-  "markdown.preview.doubleClickToSwitchToEditor": false,
-  "prettier.jsxSingleQuote": true,
-  "prettier.singleQuote": true,
-  "javascript.preferences.quoteStyle": "single",
-  "typescript.preferences.quoteStyle": "single"
+    "editor.fontSize": 16,
+    "editor.fontWeight": "100"
 }
