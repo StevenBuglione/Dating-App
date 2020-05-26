@@ -26,6 +26,9 @@ import { AuthGuard } from "./_guards/auth.guard";
 import { UserService } from "./_services/user.service";
 import { MemberDetailComponent } from "./members/member-detail/member-detail.component";
 import { MemberListResolver } from "./_resolvers/member-list.resolver";
+import { MemberEditComponent } from "./members/member-edit/member-edit.component";
+import { MemberEditResolver } from "./_resolvers/member-edit.resolver";
+import { PreventUnsavedChagnes } from "../app/_guards/prevent-unsaved-changes.guard";
 
 export function tokenGetter() {
   return localStorage.getItem("token");
@@ -41,6 +44,7 @@ export function tokenGetter() {
     MessagesComponent,
     MemberCardComponent,
     MemberDetailComponent,
+    MemberEditComponent,
   ],
   imports: [
     BrowserModule,
@@ -63,9 +67,11 @@ export function tokenGetter() {
     ErrorInterceptorProvider,
     MemberDetailResolver,
     MemberListResolver,
+    MemberEditResolver,
     AlertifyService,
     AuthGuard,
     UserService,
+    PreventUnsavedChagnes,
   ],
   bootstrap: [AppComponent],
 })
