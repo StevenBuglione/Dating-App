@@ -1,4 +1,5 @@
 {
-    "editor.fontSize": 16,
-    "editor.fontWeight": "100"
+    "editor.fontSize": 14,
+    "editor.fontWeight": "100",
+    "editor.tabCompletion": "on"
 }
