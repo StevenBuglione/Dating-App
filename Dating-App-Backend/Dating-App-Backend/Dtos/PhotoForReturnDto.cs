@@ -1,9 +1,7 @@
-﻿
-using System;
-
-namespace Dating_App_Backend.Models
+﻿using System;
+namespace Dating_App_Backend.Dtos
 {
-    public class Photo
+    public class PhotoForReturnDto
     {
         public int Id { get; set; }
         public string Url { get; set; }
@@ -11,8 +9,5 @@ namespace Dating_App_Backend.Models
         public DateTime DateAdded { get; set; }
         public bool IsMain { get; set; }
         public string PublicId { get; set; }
-        public User User { get; set; }
-        public int UserId { get; set; }
     }
-
 }
