@@ -20,6 +20,8 @@ namespace Dating_App_Backend.Data
 
         Task<Photo> GetPhoto(int id);
 
+        Task<Photo> GetMainPhotoForUser(int userId);
+
 
     }
 }
