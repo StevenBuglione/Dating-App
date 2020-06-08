@@ -21,6 +21,8 @@ import { appRoutes } from "./routes";
 import { MemberCardComponent } from "./members/member-card/member-card.component";
 import { NgxGalleryModule } from "ngx-gallery-9";
 import { TimeagoModule } from "ngx-timeago";
+import { PaginationModule } from "ngx-bootstrap/pagination";
+import { ButtonsModule } from "ngx-bootstrap/buttons";
 
 import { MemberDetailResolver } from "./_resolvers/member-detail.resolver";
 import { AlertifyService } from "./_services/alertify.service";
@@ -61,6 +63,8 @@ export function tokenGetter() {
     FileUploadModule,
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    ButtonsModule.forRoot(),
+    PaginationModule.forRoot(),
     TimeagoModule.forRoot(),
     TabsModule.forRoot(),
     RouterModule.forRoot(appRoutes),
