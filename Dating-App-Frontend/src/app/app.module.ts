@@ -20,6 +20,7 @@ import { ListsComponent } from "./lists/lists.component";
 import { appRoutes } from "./routes";
 import { MemberCardComponent } from "./members/member-card/member-card.component";
 import { NgxGalleryModule } from "ngx-gallery-9";
+import { TimeagoModule } from "ngx-timeago";
 
 import { MemberDetailResolver } from "./_resolvers/member-detail.resolver";
 import { AlertifyService } from "./_services/alertify.service";
@@ -60,6 +61,7 @@ export function tokenGetter() {
     FileUploadModule,
     BsDropdownModule.forRoot(),
     BsDatepickerModule.forRoot(),
+    TimeagoModule.forRoot(),
     TabsModule.forRoot(),
     RouterModule.forRoot(appRoutes),
     JwtModule.forRoot({
