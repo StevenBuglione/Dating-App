@@ -26,6 +26,10 @@ namespace Dating_App_Backend.Helpers
 
         public string OrderBy { get; set; }
 
+        public bool Likees { get; set; } = false;
+
+        public bool Likers { get; set; } = false; 
+
 
     }
 }
