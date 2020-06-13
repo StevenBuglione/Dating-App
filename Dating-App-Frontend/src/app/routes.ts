@@ -1,3 +1,4 @@
+import { MessagesResolver } from "./_resolvers/messages.resolver";
 import { Component } from "@angular/core";
 import { MemberDetailComponent } from "./members/member-detail/member-detail.component";
 import { AuthGuard } from "./_guards/auth.guard";
@@ -37,7 +38,11 @@ export const appRoutes: Routes = [
         resolve: { user: MemberEditResolver },
         canDeactivate: [PreventUnsavedChagnes],
       },
-      { path: "messages", component: MessagesComponent },
+      {
+        path: "messages",
+        component: MessagesComponent,
+        resolve: { messages: MessagesResolver },
+      },
       {
         path: "lists",
         component: ListsComponent,

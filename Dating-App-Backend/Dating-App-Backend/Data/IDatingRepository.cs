@@ -25,6 +25,12 @@ namespace Dating_App_Backend.Data
 
         Task<Like> GetLike(int userId, int recipientId);
 
+        Task<Message> GetMessage(int id);
+
+        Task<PagedList<Message>> GetMessagesForUser(MessageParms messageParams);
+
+        Task<IEnumerable<Message>> GetMessageThread(int userId, int recipientId);
+
 
     }
 }

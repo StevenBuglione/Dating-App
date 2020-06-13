@@ -1,3 +1,4 @@
+import { MessagesResolver } from "./_resolvers/messages.resolver";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
@@ -36,6 +37,7 @@ import { PreventUnsavedChagnes } from "../app/_guards/prevent-unsaved-changes.gu
 import { PhotoEditorComponent } from "./members/photo-editor/photo-editor.component";
 import { FileUploadModule } from "ng2-file-upload";
 import { ListsResolver } from "./_resolvers/lists.resolver";
+import { MemberMessagesComponent } from "./members/member-messages/member-messages.component";
 
 export function tokenGetter() {
   return localStorage.getItem("token");
@@ -53,6 +55,7 @@ export function tokenGetter() {
     MemberDetailComponent,
     MemberEditComponent,
     PhotoEditorComponent,
+    MemberMessagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -87,6 +90,7 @@ export function tokenGetter() {
     UserService,
     PreventUnsavedChagnes,
     ListsResolver,
+    MessagesResolver,
   ],
   bootstrap: [AppComponent],
 })
