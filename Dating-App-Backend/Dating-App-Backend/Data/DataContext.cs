@@ -20,28 +20,26 @@ namespace Dating_App_Backend.Data
                 .HasKey(k => new { k.LikerId, k.LikeeId });
 
             builder.Entity<Like>()
-                .HasOne(u => u.Likee)
-                .WithMany(u => u.Likers)
-                .HasForeignKey(u => u.LikeeId)
-                .OnDelete(DeleteBehavior.Restrict);
+               .HasOne(u => u.Likee)
+               .WithMany(u => u.Likers)
+               .HasForeignKey(u => u.LikeeId)
+               .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<Like>()
-                 .HasOne(u => u.Liker)
-                 .WithMany(u => u.Likees)
-                 .HasForeignKey(u => u.LikerId)
-                 .OnDelete(DeleteBehavior.Restrict);
-
-
-            builder.Entity<Message>()
-                .HasOne(u => u.Sender)
-                .WithMany(m => m.MessagesSent)
-                .OnDelete(DeleteBehavior.Restrict);
+               .HasOne(u => u.Liker)
+               .WithMany(u => u.Likees)
+               .HasForeignKey(u => u.LikerId)
+               .OnDelete(DeleteBehavior.Restrict);
 
             builder.Entity<Message>()
-                .HasOne(u => u.Recipient)
-                .WithMany(m => m.MessagesReceived)
-                .OnDelete(DeleteBehavior.Restrict);
+              .HasOne(u => u.Sender)
+              .WithMany(m => m.MessagesSent)
+              .OnDelete(DeleteBehavior.Restrict);
 
+            builder.Entity<Message>()
+              .HasOne(u => u.Recipient)
+              .WithMany(m => m.MessagesReceived)
+              .OnDelete(DeleteBehavior.Restrict);
         }
 
     }
